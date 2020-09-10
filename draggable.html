@@ -8,6 +8,8 @@
          <link rel="stylesheet" type="text/css" href="main.css">
          <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
          <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+         <!-- Artwork by Margaux Peltat -->
     </head>
 
     <body>
@@ -20,58 +22,107 @@
             <div id="container" class="flex items-center">
 
                 <!-- floating windows -->
-                <div class="rounded overflow-hidden shadow-lg item window youtube">
+                <div class="rounded overflow-hidden shadow-lg item window youtube hidden">
                     <div class="handle title-bar">
-                        <div class="title-bar-text">code-fi / lofi beats to code/relax to</div>
-                        <div class="title-bar-controls exit">
-                            <button aria-label="Close"></button>
+                        <div class="title-bar-text">YouTube - 1 hour of aesthetic & calm lofi music 🌙</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
                         </div>
                     </div>
-                    <div class="window-body margin-zero">
-                        <iframe width="505" height="284" src="https://www.youtube.com/embed/f02mOEt11OQ?autoplay=1&mute=0&controls=1&modestbranding=1&disablekb=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>
+                    <div class="window-body margin-zero"></div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg item window gfycat hidden">
+                    <div class="handle title-bar">
+                        <div class="title-bar-text">Gfycat - Visuals</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body margin-zero"></div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg item window soundcloud hidden">
+                    <div class="handle title-bar">
+                        <div class="title-bar-text">Soundcloud - Study & Chill | Lofi Hiphop</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body margin-zero"></div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg item window socials hidden">
+                    <div class="handle title-bar">
+                        <div class="title-bar-text">Socials</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body mx-5"></div>
+                </div>
+
+                <div class="rounded overflow-hidden shadow-lg item window change-vibe hidden">
+                    <div class="handle title-bar">
+                        <div class="title-bar-text">Change Vibe</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div class="window-body mx-5">
+                        
                     </div>
                 </div>
 
-                <div class="rounded overflow-hidden shadow-lg item window gfycat">
+                <div class="rounded overflow-hidden shadow-lg item window about hidden">
                     <div class="handle title-bar">
-                        <div class="title-bar-text">Vibes</div>
-                        <div class="title-bar-controls exit">
-                            <button aria-label="Close"></button>
+                        <div class="title-bar-text">About</div>
+                        <div class="title-bar-controls">
+                            <button class="hide" aria-label="Minimize"></button>
+                            <button class="exit" aria-label="Close"></button>
                         </div>
                     </div>
-                    <div class="window-body margin-zero">
-                        <iframe src='https://gfycat.com/ifr/tag/chilledcow' frameborder='0' scrolling='no' allowfullscreen width='300' height='300'></iframe>
-                        <!-- <iframe src='https://gfycat.com/ifr/CarefreeAfraidCrustacean' frameborder='0' scrolling='no' allowfullscreen width='300' height='300'></iframe> -->
-                    </div>
-                </div>
-
-                <div class="rounded overflow-hidden shadow-lg item window hidden">
-                    <div class="handle title-bar">
-                        <div class="title-bar-text">A Title Bar</div>
-                        <div class="title-bar-controls exit">
-                            <button aria-label="Close"></button>
-                        </div>
-                    </div>
-                    <div class="window-body margin-zero">
+                    <div class="window-body mx-5">
+                        
                     </div>
                 </div>
 
                 <!-- static icons -->
-                <div class="icon-container p-3 m-3 w-1/2">
-                    <div class="flex text-center">
-                        <div class="w-1/6 h-12">
-                            <button id="item1" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                                Button
+                <div class="icon-container p-3 m-3 w-3/4">
+                    <div class="flex flex-wrap">
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button id="item1" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-full">
+                                YouTube
                             </button>
                         </div>
-                        <div class="w-1/6 h-12">
-                            <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded">
-                                Button
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded w-full">
+                                Visuals
                             </button>
                         </div>
-                        <div class="w-1/6 h-12">
-                            <button class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded">
-                                Button
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded w-full">
+                                Soundcloud
+                            </button>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded w-full">
+                                Socials
+                            </button>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button class="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 border-b-4 border-purple-700 hover:border-purple-500 rounded w-full">
+                                Change Vibe
+                            </button>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/6 h-12 px-2">
+                            <button class="bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-4 border-b-4 border-indigo-700 hover:border-indigo-500 rounded w-full">
+                                About
                             </button>
                         </div>
                     </div>
@@ -83,6 +134,34 @@
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
+            function open_gfycat(win) {
+                win.find(".window-body").append("<iframe src='https://gfycat.com/ifr/search/chilledcow??controls=0&speed=0.25' frameborder='0' scrolling='no' allowfullscreen width='300' height='170'></iframe>");
+            }
+            function open_youtube(win) {
+                win.find(".window-body").append('<iframe width="505" height="284" src="https://www.youtube.com/embed/f02mOEt11OQ?autoplay=1&mute=0&controls=1&modestbranding=1&disablekb=1&playsinline=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="1"></iframe>');
+            }
+            function open_soundcloud(win){
+                win.find(".window-body").append('<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/595582668&color=%232400ff&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+            }
+            function open_socials(win) {
+                win.find(".window-body").append(`<div class="flex items-center">
+                            <a class="mx-4 cursor-pointer" href="https://twitter.com/keuxdi" target="_blank" rel="noopener">
+                                <img width="64" height="64" src="imgs/social/twitter.png">
+                            </a>
+                            <a class="mx-4 cursor-pointer" href="https://instagram.com/cdyingrm" target="_blank" rel="noopener">
+                                <img width="64" height="64" src="imgs/social/instagram.png">
+                            </a>
+                        </div>`);
+            }
+            function open_change_vibe(win){
+                win.find(".window-body").append(``);
+            }
+            function open_about(win){
+                win.find(".window-body").append(``);
+            }
+
+            var pages = [false, false, false, false, false, false];
+
             $(function(){
                 $(".item").draggable({ containment: "body" });
 
@@ -91,18 +170,47 @@
                     $(this).css("z-index", "1");
                 });
 
-                $(".exit").click(function(e){
+                $(".hide").click(function(e){
                     e.stopPropagation();
                     $(this).closest(".item").addClass("hidden");
                 });  
 
+                $(".exit").click(function(e){
+                    e.stopPropagation();
+                    $(this).closest(".item").addClass("hidden");
+                    pages[$(this).closest(".item").index()] = false;
+                    $(this).closest(".item").find(".window-body").empty();
+                });  
+
                 $(".icon-container div").on("click", "div", function(){
+                    if ($(this).index() == 0 && pages[0] == false){
+                        open_youtube($($(".item")[$(this).index()]))
+                    }
+                    else if ($(this).index() == 1 && pages[1] == false){
+                        open_gfycat($($(".item")[$(this).index()]))
+                    }
+                    else if ($(this).index() == 2 && pages[2] == false){
+                        open_soundcloud($($(".item")[$(this).index()]))
+                    }
+                    else if ($(this).index() == 3 && pages[3] == false){
+                        open_socials($($(".item")[$(this).index()]))
+                    }
+                    else if ($(this).index() == 4 && pages[4] == false){
+                        open_change_vibe($($(".item")[$(this).index()]))
+                    }
+                    else if ($(this).index() == 5 && pages[5] == false){
+                        open_about($($(".item")[$(this).index()]))
+                    }
+
+                    $($(".item")[$(this).index()]).trigger("mousedown");
+
                     $($(".item")[$(this).index()]).removeClass("hidden");
+                    pages[$(this).index()] = true;
                 });
             });
 
             window.onload = function() {
-                console.log("test");
+            
             };
         </script>
     </body>

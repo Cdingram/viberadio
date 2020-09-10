@@ -5,11 +5,10 @@ html, body {
   width: 100%;
 }
 body {
-    background-image: url("imgs/eeb14524f9c1af4c73ca71ecb07c93f6.jpg");
-    min-height: 600px;
+    background-image: url("imgs/chill.jpg");
     overflow: auto;
     background-position: right;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 #page {
@@ -21,13 +20,11 @@ body {
     align-items: center;
     justify-content: center;
     touch-action: none;
-    min-height: 600px;
 }
 .item {
-    /*background-color: rgb(245, 230, 99);*/
-    /*border: 2px solid blue;*/
     z-index: 0;
-    position: relative;
+    position: absolute;
+    top:10%;
     width: 550px;
     height: 310px;
 }
@@ -37,22 +34,26 @@ body {
 }
 .gfycat {
     width: 306px;
+    height: 196px;
+}
+.soundcloud {
+    width: 511px;
     height: 327px;
+}
+.socials {
+    width: 215px;
+    height: 106px;
 }
 .handle {
     height: 20px;
     background-color: blue;
     touch-action: none;
     user-select: none;
+    cursor: grab;
 }
-/*.exit {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15px;
-    width: 10%;
-    background-color: red;
-}*/
+.handle:active {
+    cursor: grabbing;
+}
 #page {
     position: relative;
     height: 100%;
@@ -61,6 +62,9 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+.icon-container button {
+    z-index: -1;
 }
 ul.projects li:not(.ui-sortable-helper) {
   float: left;
