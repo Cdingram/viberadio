@@ -79,3 +79,6 @@ ul.projects li:not(.ui-sortable-helper) {
 .margin-zero {
     margin: 0px !important;
 }
+nav img {
+    z-index: 100000;
+}
