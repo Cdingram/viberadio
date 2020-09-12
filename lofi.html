@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-        <title>Drag/Drop/Bounce</title>
+        <title>viberad.io</title>
 
          <!-- css -->
          <link rel="stylesheet" type="text/css" href="main.css">
@@ -24,7 +24,7 @@
                 <!-- floating windows -->
                 <div class="rounded overflow-hidden shadow-lg item window youtube hidden">
                     <div class="handle title-bar">
-                        <div class="title-bar-text">YouTube - 1 hour of aesthetic & calm lofi music 🌙</div>
+                        <div class="title-bar-text">1 hour of aesthetic & calm lofi music 🌙</div>
                         <div class="title-bar-controls">
                             <button class="hide" aria-label="Minimize"></button>
                             <button class="exit" aria-label="Close"></button>
@@ -46,7 +46,7 @@
 
                 <div class="rounded overflow-hidden shadow-lg item window soundcloud hidden">
                     <div class="handle title-bar">
-                        <div class="title-bar-text">Soundcloud - Study & Chill | Lofi Hiphop</div>
+                        <div class="title-bar-text">Study & Chill | Lofi Hiphop</div>
                         <div class="title-bar-controls">
                             <button class="hide" aria-label="Minimize"></button>
                             <button class="exit" aria-label="Close"></button>
@@ -154,16 +154,23 @@
                         </div>`);
             }
             function open_change_vibe(win){
-                win.find(".window-body").append(``);
+                win.find(".window-body").append(`<div>
+                            <a href="/lofi.html"><button class="mr-4">lofi / chill</button></a>
+                            <a href="/outrun.html"><button>outrun</button></a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="/soundtrack.html"><button class="mr-4">epic</button></a>
+                            <a href="/hiphop.html"><button>os hip hop</button></a>
+                        </div>`);
             }
             function open_about(win){
-                win.find(".window-body").append(``);
+                win.find(".window-body").append(`<div>The homepage of your second monitor. Let me know on twitter if you would like to be able to customize your own vibe.</div><div class='mt-4'>Made by twitter.com/@keuxdi.<br/>Background image by Margaux Peltat</div>`);
             }
 
             var pages = [false, false, false, false, false, false];
 
             $(function(){
-                $(".item").draggable({ containment: "body" });
+                $(".item").draggable({ containment: "body", handle: ".handle" });
 
                 $(".item").mousedown(function(){
                     $(".item").css("z-index", "0");

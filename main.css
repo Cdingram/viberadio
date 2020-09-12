@@ -44,6 +44,14 @@ body {
     width: 215px;
     height: 106px;
 }
+.about {
+    width: 300px;
+    height: 150px;
+}
+.change-vibe {
+    width: 192px;
+    height: 105px;
+}
 .handle {
     height: 20px;
     background-color: blue;
@@ -81,4 +89,7 @@ ul.projects li:not(.ui-sortable-helper) {
 }
 nav img {
     z-index: 100000;
+}
+a {
+    color: black !important;
 }
